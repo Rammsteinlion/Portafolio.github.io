@@ -68,7 +68,7 @@
                             <a href="https://www.linkedin.com/in/elkindev/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
                             <a href="https://github.com/Rammsteinlion" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                             <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
-                            <a href="#" class="about__text">Hoja de vida</a>
+                            <a href="hoja_de_vida/Hoja_vida_elkinM.pdf" class="about__text">Hoja de vida</a>
                         </div>
                     </div>
                 </div>
@@ -169,15 +169,16 @@
                         <span class="contact__text">Medellin(Colombia)</span>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form id="my-form" action="https://formspree.io/f/meqngonz" method="POST" class="contact__form">
                         <div class="contact__inputs">
-                            <input type="text" placeholder="Nombre" class="contact__input">
-                            <input type="mail" placeholder="Correo Electronico" class="contact__input">
+                            <input type="text" name="name" placeholder="Nombre" class="contact__input">
+                            <input type="email" name="email" placeholder="Correo Electronico" class="contact__input">
                         </div>
 
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <textarea name="message" cols="0" rows="10" class="contact__input"></textarea>
 
                         <input type="submit" value="Enviar" class="contact__button">
+                        <p id="my-form-status"></p>
                     </form>
                 </div>
             </section>
@@ -218,9 +219,11 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+
+        <!--===== Mensaje correo =====-->
+        <script src="assets/js/mensaje_correo.js"></script>
         
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        
     </body>
 </html>
